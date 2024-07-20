@@ -1,91 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Serenitea</title>
-    <link rel="stylesheet" href="Assets/styles.css">
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- AOS Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <style>
-        .contact-section {
-            padding: 50px 20px;
-            color: #006732;
-            background-color: #f8f7cb;
-        }
-        .contact-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .contact-section p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-        .contact-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .contact-form {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Serenitea</title>
+  <link rel="stylesheet" href="Assets/styles.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    .contact-section {
+      padding: 50px 20px;
+      color: #006732;
+      background-color: #f8f7cb;
+    }
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contact-section p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .contact-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .contact-form {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="contact-section">
+  <div class="content">
+    <header>
+      <div class="container">
+        <img src="Assets/logo.png" alt="Serenitea Logo" class="logo" data-aos="fade-down">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-container">
-                <div class="contact-form col-lg-6 col-md-6 col-sm-12">
-                    <h3>We'd love to hear from you!</h3>
-                    <p>Use the form below to send us a message</p>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-number">Contact Number *</label>
-                            <input type="text" class="form-control" id="contact-number" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Send Message</button>
-                    </form>
+          <h2 data-aos="fade-up">Contact Us</h2>
+          <p data-aos="fade-up">
+            Get in touch with us for any inquiries or feedback.
+          </p>
+          <div class="contact-container">
+            <div class="contact-form col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
+              <h3>We'd love to hear from you!</h3>
+              <p>Use the form below to send us a message</p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name" required>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="Assets/contact-image.png" alt="Contact Image" class="contact-image">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email" required>
                 </div>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Send</button>
+              </form>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
+              <img src="Assets/contact-image.png" alt="Contact Image" class="contact-image">
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Serenitea. All rights reserved.</p>
     </div>
-    <script>
-        AOS.init();
-    </script>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200, // Animation duration
+    });
+  </script>
 </body>
 </html>
