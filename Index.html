@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenitea</title>
+  <link rel="stylesheet" href="Assets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    .section-block {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 50px;
+        color: #006732;
+        margin-bottom: 20px;
+    }
+    .menu-section {
+        background-color:#F8F7CB;
+    }
+    .shop-section {
+        background-color: #F6B324;
+    }
+    .section-content {
+        max-width: 50%;
+    }
+    .section-image {
+        max-width: 50%;
+    }
+    .section-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .btn-view {
+        background-color: #6FB224;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <div class="container">
+        <img src="Assets/logo.png" alt="Serenitea Logo" class="logo" data-aos="fade-down">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" data-aos="fade-left"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f" data-aos="fade-left"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" data-aos="fade-left"></i></a>
+          <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok" data-aos="fade-left"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="Assets/drinks.jpg" alt="Hero Image" data-aos="zoom-in" class="img-fluid"> 
+      </section>
+      <section class="intro">
+        <div class="container">
+          <p data-aos="fade-up">
+            Discover the finest teas from around the world, blended to perfection.
+          </p>
+        </div>
+      </section>
+      
+      <!-- Menu Section -->
+      <section class="section-block menu-section">
+        <div class="section-content" data-aos="fade-right">
+          <h2>Our Menu</h2>
+          <p>Explore our wide variety of teas, from classic blends to exotic flavors.</p>
+          <a href="menu.html" class="btn-view">View Menu</a>
+        </div>
+        <div class="section-image" data-aos="fade-left">
+          <img src="Assets/menu-side-image.png" alt="Menu Image">
+        </div>
+      </section>
+
+      <!-- Shop Section -->
+      <section class="section-block shop-section">
+        <div class="section-image" data-aos="fade-right">
+          <img src="Assets/shop-side-image.png" alt="Shop Image">
+        </div>
+        <div class="section-content" data-aos="fade-left">
+          <h2>Our Shop</h2>
+          <p>Find your favorite teas and accessories in our online store.</p>
+          <a href="shop.html" class="btn-view">Visit Shop</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Serenitea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200, // Animation duration
+    });
+  </script>
+</body>
+</html>
