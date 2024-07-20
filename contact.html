@@ -40,12 +40,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
+    }
+    .contact-container > div {
+      flex: 1;
     }
     @media (max-width: 768px) {
       .contact-container {
         flex-direction: column;
+      }
+      .contact-image {
+        margin-top: 20px;
       }
     }
   </style>
@@ -74,7 +80,7 @@
             Get in touch with us for any inquiries or feedback.
           </p>
           <div class="contact-container">
-            <div class="contact-form col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
+            <div class="contact-form" data-aos="fade-up">
               <h3>We'd love to hear from you!</h3>
               <p>Use the form below to send us a message</p>
               <form>
@@ -90,7 +96,7 @@
                 <button type="submit" class="btn btn-primary mt-3">Send</button>
               </form>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
+            <div data-aos="fade-up">
               <img src="Assets/contact-us-image-02.jpg" alt="Contact Image" class="contact-image">
             </div>
           </div>
