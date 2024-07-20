@@ -12,38 +12,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <style>
     .about-section {
-        padding: 50px 20px;
-        color: #006732;
-        background-color: #f8f7cb;
-    }
-    .about-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .about-content img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-    .about-content .text {
-        flex: 1;
-        padding: 20px;
-    }
-    .about-content .image {
-        flex: 1;
-        padding: 20px;
+      padding: 50px 20px;
+      color: #006732;
+      background-color: #f8f7cb;
     }
     .about-section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
     .about-section p {
-        font-size: 1rem;
-        margin-bottom: 20px;
+      font-size: 1rem;
+      margin-bottom: 20px;
     }
     .highlight {
-        color: #6fb224;
-        font-weight: bold;
+      color: #6fb224;
+      font-weight: bold;
+    }
+    .image-text-row {
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .image-text-row .text {
+      flex: 1;
+      padding: 20px;
+    }
+    .image-text-row .image {
+      flex: 1;
+      padding: 20px;
+    }
+    .image-text-row img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .image-text-row {
+        flex-direction: column;
+      }
+      .image-text-row .text, .image-text-row .image {
+        padding: 10px;
+      }
     }
   </style>
 </head>
@@ -67,14 +76,34 @@
       <section class="about-section">
         <div class="container">
           <h2 data-aos="fade-up">Serenitea Story</h2>
-          <div class="about-content" data-aos="fade-up">
+
+          <div class="image-text-row" data-aos="fade-up">
             <div class="text">
               <p>Serenitea first opened on December 19, 2008. Back then, our country was a predominately coffee drinking populace.</p>
               <p class="highlight">It was Serenitea who first introduced brewing of tea using an espresso machine in our country,</p>
+              <p>with the added option of allowing our customers to customize their drinks such as the sweetness level and sinkers in a well-designated teashop ambiance.</p>
               <p>We introduced tea drinking in the framework of the coffee industry and garnered wide success among the Filipinos. <strong>From our pioneer branch in San Juan, Serenitea quickly grew to sixty-five (65) branches in ten years.</strong> Currently, we also have branches located in the Southern part of the Philippines, in Cebu, Tacloban, Legazpi and Davao City. Serenitea is constantly looking forward to expanding its reach to other provincial areas in the country.</p>
             </div>
             <div class="image">
-              <img src="Assets/about-us-store.jpg" alt="Serenitea Store">
+              <img src="Assets/serenitea_store_image.png" alt="Serenitea Store">
+            </div>
+          </div>
+
+          <div class="image-text-row flex-row-reverse" data-aos="fade-up">
+            <div class="text">
+              <p>In order to provide convenience to their customers, they’re one of the first milk tea brands to launch the DIY (do-it-yourself) Home Kits. Serenitea is now available on two of the biggest e-commerce platforms in the Philippines - Shopee and Lazada to tap the market beyond the reach of their physical stores and so that their customers can enjoy milk teas at the comforts of their home.</p>
+            </div>
+            <div class="image">
+              <img src="Assets/serenitea_diy_kit_image.png" alt="Serenitea DIY Kit">
+            </div>
+          </div>
+
+          <div class="image-text-row" data-aos="fade-up">
+            <div class="text">
+              <p>We are committed to providing the best quality tea beverages and customer experience. Each cup of Serenitea is carefully crafted to ensure a delightful taste and refreshing experience. Our mission is to make tea a part of every Filipino's daily routine and to create a community of tea lovers.</p>
+            </div>
+            <div class="image">
+              <img src="Assets/serenitea_crafting_image.png" alt="Crafting Serenitea">
             </div>
           </div>
         </div>
